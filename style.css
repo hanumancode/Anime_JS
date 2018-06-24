@@ -1,0 +1,26 @@
+.square {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 4px;
+	display: inline-block;
+}
+
+.red {
+	background-color: red;
+ 	border-radius: 5px 20px 5px;
+}
+
+.blue {
+	background-color: blue;
+	border-radius: 5px 20px 5px;
+}
+
+.green {
+	background-color: green;
+	border-radius: 5px 20px 5px;}
+
+.yellow {
+	background-color: yellow;
+	border-radius: 5px 20px 5px;
+}

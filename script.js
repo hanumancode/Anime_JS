@@ -1,5 +1,5 @@
 
-anime({
+var playPause = anime({
 	targets: 'div.square',
 	  translateY: [
 	  	{ value: 200, duration: 500 },
@@ -7,11 +7,23 @@ anime({
 	  ],
 	  rotate: '2turn',
 	  easing: 'easeInOutSine',
-	delay: function(el, i, l) { return i * 1000 }
+	delay: function(el, i, l) { return i * 1000 },
+	autoplay: false,
+	loop: true
 });
+
+document.querySelector('#squares .play').onclick = playPause.play;
+document.querySelector('#squares .pause').onclick = playPause.pause;
+
+
+
+
+
+
 
 
 // old code below before refactoring
+
 
 /*
 anime({
